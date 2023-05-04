@@ -96,7 +96,7 @@ signup and login and i notice in source code that js is connecting in ws://
 ```
 
 We can use the Below python code to direct the request from sqlmap to our localhost taken by this article
-[link]https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html
+[link](https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html)
 
 
 
@@ -192,7 +192,7 @@ and we can privesc
 
 suid --> doas
 
-in this [article]https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/doas/
+in this [article](https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/doas/)
 
 ```bash
 cat /usr/local/etc/doas.conf 
