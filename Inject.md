@@ -149,7 +149,7 @@ we can change it like this
   tasks:
   - name: shell
     command: sudo chmod u+s /bin/bash
-    ```
+```
 
 
 once uploaded 
