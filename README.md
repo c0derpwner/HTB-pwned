@@ -5,7 +5,7 @@
 
 This Repo was created in order to have a sort of portfolio! 
 
-There are the latest box of HackTheBox .
+There are the latest CTF by HackTheBox .
 
 
 
