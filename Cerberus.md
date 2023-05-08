@@ -107,7 +107,7 @@ example:
 
 
 ```
-file:///path/to/a/cert.pem\x00<?php system("whoami")>?;
+file:///path/to/a/cert.pem\x00<?php system("whoami")?>;
 ```
 
 
