@@ -195,7 +195,7 @@ Sec-GPC: 1
 response
 
 
-```json
+```js
 {
   "headers": [
     {
