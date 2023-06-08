@@ -241,11 +241,7 @@ and now can gain access with ssh without any credentials
 
 I notice that there's another lateral movement with solar-flares flow which i can see logs!
 
-so everytime our victim connect with  jupiter notebook which is a open source framework for interactive computing across all programming languages.
-
-
-In this particular case the jupiter notebook framework enables access with token 
-
+So everytime our victim connect with jupiter notebook (which is a open source framework for interactive computing across all programming languages) and in logs we can see his token and so we can directly access to the page without password
 
 
 
