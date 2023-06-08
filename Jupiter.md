@@ -239,7 +239,7 @@ and now can gain access with ssh without any credentials
 
 
 
-I notice that there' another lateral movement with solar-flares flow which i can see logs!
+I notice that there's another lateral movement with solar-flares flow which i can see logs!
 
 so everytime our victim connect with  jupiter notebook which is a open source framework for interactive computing across all programming languages.
 
